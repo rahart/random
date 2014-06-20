@@ -1,0 +1,11 @@
+sudo apt-get update
+sudo apt-get install git
+sudo apt-get install ruby1.9.1 ruby1.9.1-dev \
+  rubygems1.9.1 irb1.9.1 ri1.9.1 rdoc1.9.1 \
+  build-essential libopenssl-ruby1.9.1 libssl-dev zlib1g-dev
+wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
+sudo dpkg -i puppetlabs-release-precise.deb
+sudo apt-get update
+sudo apt-get install puppet
+sudo puppet module install puppetlabs-mysql
+sudo puppet module install jfryman-nginx
